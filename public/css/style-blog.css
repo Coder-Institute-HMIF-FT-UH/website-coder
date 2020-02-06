@@ -1,0 +1,56 @@
+.pagination {
+  text-align: center;
+}
+.pagination li a:hover{
+	color: #e9b701;
+}
+.pagination li {
+	margin: auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.pagination ul{
+	margin: auto !important;
+}
+.page{
+  padding: 0.4rem 0.3rem;
+}
+
+/* Article */
+#article{
+  margin-top: 3.5rem;
+	margin-bottom: 8rem;
+	padding-top: 8rem;
+}
+#article .devider{
+  width: 52rem;
+}
+#article .post{
+  margin: 5rem 0 5rem 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  column-gap: 5rem;
+  row-gap: 4rem;
+}
+#article img{
+  width: 35.29rem;
+}
+#article h2{
+  margin-top: 1.4rem;
+}
+#article .post-info{
+  margin-top: 0.7rem;
+  font-size: 0.94rem;
+  color: #666666;
+}
+
+.pagination li{
+  text-align: center;
+}
+
+.pagination .active{
+  background-color: #fff;
+  color: #e9b701;
+  border-bottom: 2px solid #e9b701;
+}

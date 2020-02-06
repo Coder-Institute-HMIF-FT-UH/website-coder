@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #e9b701;
+    --dark-color: #383838;
+    --light-gray: #666666;
+}
+
+/* Default Styles */
+html {
+    /* Untuk projek ini, 1rem = 14px */
+    font-size: 87.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #e9b701;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 5.7rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.9rem;
+    line-height: 1.26em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    align-items: center
+}
+
+input, textarea{
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+input:focus, textarea:focus{
+    outline-color: #e9b7017e;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.2rem;
+    border-bottom: 0.1rem solid #e9b7017e;
+    box-sizing: border-box;
+}
+
+input[type=email]{
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.2rem;
+    border-bottom: 0.1rem solid #e9b7017e;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.1rem solid #e9b7017e;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    resize: vertical;
+    height:24rem;
+}
+
+label {
+    display: inline-block;
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    float: right;
+}
+
+/* Utilities */
+.wrap {
+    width: 1060px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.v-centered-grid {
+    align-items: center;
+}
+
+.v-centered {
+    display: table-cell;
+    vertical-align: middle;
+    height: inherit;
+    width: 100vw;
+}
+
+.h-centered-grid {
+    justify-items: center;
+}
+
+.h-centered {
+    text-align: center;
+}
+
+.weight-semibold {
+    font-weight: 600;
+}
+
+.weight-bold {
+    font-weight: 700;
+}
+
+.text-coder {
+    color: #e9b701;
+}
+
+a:hover.text-coder {
+    color: inherit;
+}
+
+.text-dark {
+    color: #383838;
+}
+
+.devider {
+    width: 28rem;
+    margin-top: 1.3rem;
+}
+
+.list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 4rem 0;
+}
+
+.list-content {
+    width: 20rem;
+    padding: 3rem;
+    border: 0.25rem solid var(--primary-color);
+    grid-auto-rows: 1fr;
+}
+
+.list-content-images {
+    width: 9rem;
+}
+
+.list-content-header {
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+#judul {
+    margin-top: 3.5rem;
+    margin-bottom: 4rem;
+    padding-top: 8rem;
+}
+
+#judul .wrap {
+    width: 988px;
+}
+
+#judul p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.7;
+    margin: 3rem 0;
+}
+
+#judul a {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 65% auto;
+    margin: 4rem 0 8rem 1rem;
+}
+@media screen and (max-width: 600px) {
+    #form {
+    grid-template-columns: 100% auto;
+    padding-bottom: 3rem;
+}
+}
+
+#form>.formulir>h2{
+    margin-bottom: 1.4rem;
+}
+
+#form .submit-button{
+    margin-top: 1.3rem;
+}
+
+#contact{
+    justify-self: center;
+    margin-top: -10rem;
+}
+
+#contact .contact-box{
+    background-color: #383838;
+    color: #383838;
+    padding: 2rem 2rem;
+    width: 17rem;
+}
+
+#contact p{
+    margin-bottom: 0.3rem;
+}
+
+#contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}

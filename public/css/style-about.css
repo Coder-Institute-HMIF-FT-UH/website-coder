@@ -1,0 +1,180 @@
+h3{
+    font-size: 1.17rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 7rem;
+}
+.grid-item {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.mySlides {
+    display: none
+}
+
+.pengurus img {
+  max-width: 185px;
+  vertical-align: middle;
+}
+
+.pengurus p{
+  font-size: 20px;
+}
+
+.carousel.slide{
+  width: 80%;
+  float: right;
+  /* max-width: 80%; */
+}
+
+.tentang {
+  padding-left: 2rem;
+  /* text-align: justify; */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -1.9rem;
+  color: rgb(136, 136, 136);
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.prev{
+  left: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.2rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 0.8rem}
+}
+
+#divisi{
+  background-color: #FFFCF2;
+  padding: 7rem 0;
+}
+
+/* visi */
+
+#visi {
+    background-image: url("../images/main-bg.png");
+    padding: 9rem 0;
+    background-size: cover;
+}
+
+#visi #judul{
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding-top: 0;
+}
+
+#visi p {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0% 20% 0% 20%;
+}
+
+.text-white {
+    color: white;
+}
+
+/* tim kami */
+
+#tim #judul{
+      margin-top: 0;
+      margin-bottom: 4rem;
+}
+
+#tim .grid-container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+#tim .grid-item {
+    text-align: center;
+}
+#tim .grid-item p{
+    margin-bottom: 0.4rem;
+}
+
+.mobile-image{
+  height: 8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel.slide{
+    width: 100%;
+  }
+  .tentang {
+    text-align: center;
+    /* text-align: justify; */
+  }
+  #visi p {
+    font-size: 25px;
+    padding: 0;
+}
+}

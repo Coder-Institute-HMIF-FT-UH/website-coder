@@ -1,0 +1,27 @@
+.text-coder{
+  color: #e9b701;
+}
+.logo{
+  height: 2.3rem;
+}
+.no-border{
+  border: none !important;
+}
+.table td, .table th{
+  vertical-align: middle;
+}
+
+/* Sidebar */
+#sidebar .brand{
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+.sidebar{
+  height: 100%;
+}
+
+/* Dashboard */
+#dashboard .nothing{
+  width: 26rem;
+}
